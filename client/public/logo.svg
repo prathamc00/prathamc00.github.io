@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b7ff3c" stop-opacity="0.18" />
+      <stop offset="60%" stop-color="#b7ff3c" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#090b0a" stop-opacity="0" />
+    </radialGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;display=swap');
+      .serif-p {
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-size: 68px;
+        fill: #b7ff3c;
+      }
+    </style>
+  </defs>
+
+  <!-- Dark Background -->
+  <rect width="100" height="100" fill="#090b0a" />
+
+  <!-- Ambient Glow -->
+  <rect width="100" height="100" fill="url(#centerGlow)" />
+
+  <!-- Reticle Grid Lines -->
+  <line x1="50" y1="0" x2="50" y2="100" stroke="#b7ff3c" stroke-opacity="0.4" stroke-width="1" />
+  <line x1="0" y1="50" x2="100" y2="50" stroke="#b7ff3c" stroke-opacity="0.4" stroke-width="1" />
+
+  <!-- Letter 'p' & Period -->
+  <!-- Serif 'p' geometry path to ensure 100% crisp rendering without external font lag -->
+  <g fill="#b7ff3c">
+    <!-- Main serif lowercase 'p' -->
+    <path d="M 44.5 38.2 C 43.1 37.8 41.2 37.6 38.6 37.6 C 36.5 37.6 34.2 38.2 32.5 39.5 L 32.5 42.6 C 33.7 42.1 34.8 41.8 35.8 41.8 C 37.2 41.8 37.8 42.6 37.8 44.2 L 37.8 77.8 C 37.8 80.2 36.8 80.9 33.8 81.1 L 33.8 84 L 47.6 84 L 47.6 81.1 C 44.9 80.9 44.1 80.2 44.1 77.8 L 44.1 66.8 C 46.5 69.1 49.5 70.3 53.6 70.3 C 62.4 70.3 68.2 63.4 68.2 53.8 C 68.2 43.7 61.6 37.6 52.8 37.6 C 48.9 37.6 46.2 38.9 44.5 41.1 Z M 44.2 47.9 C 45.4 44.2 48.4 41.8 52.2 41.8 C 57.8 41.8 61.5 46.8 61.5 54.1 C 61.5 61.8 57.7 66.4 52.1 66.4 C 48.6 66.4 45.5 64.0 44.2 60.1 Z" />
+    
+    <!-- Square Period dot -->
+    <rect x="74.5" y="72.2" width="7.6" height="7.6" />
+  </g>
+</svg>
