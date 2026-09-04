@@ -10,11 +10,13 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Article from "./pages/Article";
 import Home from "./pages/Home";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/projects/:slug" component={ProjectDetail} />
       <Route path="/writing/:slug" component={Article} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
